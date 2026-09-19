@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio de Alex Rivera, diseñador y desarrollador frontend enfocado en experiencias digitales claras, rápidas y memorables."
+    />
+    <meta name="theme-color" content="#f4f1e8" />
+    <title>Alex Rivera — Diseñador &amp; Frontend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark">AR</span>
+        <span>Alex Rivera</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+
+      <nav id="site-nav" aria-label="Navegación principal">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a class="nav-cta" href="#contacto">Hablemos <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-top reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Disponible para nuevos proyectos</p>
+          <p class="hero-index">PORTAFOLIO / 2026</p>
+        </div>
+
+        <h1 id="hero-title" class="reveal">
+          Diseño productos<br />
+          digitales que <em>conectan.</em>
+        </h1>
+
+        <div class="hero-bottom reveal">
+          <p>
+            Soy Alex, diseñador y desarrollador frontend. Convierto ideas complejas
+            en experiencias claras, rápidas y humanas.
+          </p>
+          <a class="circle-link" href="#proyectos" aria-label="Ver proyectos">
+            <span>Ver trabajo</span>
+            <strong>↓</strong>
+          </a>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div>
+            <span>DISEÑO DE PRODUCTO</span><i>✦</i><span>DESARROLLO FRONTEND</span><i>✦</i>
+            <span>EXPERIENCIA DE USUARIO</span><i>✦</i><span>DISEÑO DE PRODUCTO</span><i>✦</i>
+            <span>DESARROLLO FRONTEND</span><i>✦</i><span>EXPERIENCIA DE USUARIO</span><i>✦</i>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="proyectos" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="section-number">01 / PROYECTOS</p>
+          <h2 id="projects-title">Trabajo seleccionado</h2>
+          <p>Una selección de proyectos donde estrategia, diseño y código trabajan juntos.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-card--coral reveal">
+            <div class="project-copy">
+              <p class="project-number">01</p>
+              <div>
+                <div class="tags"><span>UX/UI</span><span>Frontend</span><span>2025</span></div>
+                <h3>Nexo<br />Finanzas</h3>
+                <p>Una plataforma financiera que transforma datos complejos en decisiones simples.</p>
+              </div>
+              <a href="#contacto" aria-label="Consultar sobre el proyecto Nexo Finanzas">Ver caso <span>↗</span></a>
+            </div>
+            <div class="project-visual finance-ui" aria-label="Vista previa de la aplicación Nexo Finanzas">
+              <div class="browser-bar"><i></i><i></i><i></i><span>nexo.finance/dashboard</span></div>
+              <div class="mock-dashboard">
+                <aside><b>N.</b><span>⌂</span><span>⌁</span><span>◫</span><span>⚙</span></aside>
+                <div class="dashboard-main">
+                  <div class="dash-top"><small>Buenos días, Alex</small><strong>Resumen financiero</strong></div>
+                  <div class="balance"><small>Balance total</small><b>$ 84.240</b><span>+12.8% este mes</span></div>
+                  <div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="mini-cards"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--violet reveal">
+            <div class="project-copy">
+              <p class="project-number">02</p>
+              <div>
+                <div class="tags"><span>Producto</span><span>Web app</span><span>2024</span></div>
+                <h3>Alma<br />Studio</h3>
+                <p>Identidad y experiencia digital para un estudio creativo en pleno crecimiento.</p>
+              </div>
+              <a href="#contacto" aria-label="Consultar sobre el proyecto Alma Studio">Ver caso <span>↗</span></a>
+            </div>
+            <div class="project-visual studio-ui" aria-label="Vista previa del sitio Alma Studio">
+              <div class="poster poster-a"><small>ALMA®</small><b>Ideas que<br /><em>mueven</em><br />personas.</b><span>ESTUDIO CREATIVO<br />MONTEVIDEO — UY</span></div>
+              <div class="poster poster-b"><div></div><strong>A</strong><small>EXPERIMENT / 04</small></div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--lime reveal">
+            <div class="project-copy">
+              <p class="project-number">03</p>
+              <div>
+                <div class="tags"><span>Research</span><span>Mobile</span><span>2024</span></div>
+                <h3>Raíz<br />Market</h3>
+                <p>Un marketplace local que acerca productores conscientes a su comunidad.</p>
+              </div>
+              <a href="#contacto" aria-label="Consultar sobre el proyecto Raíz Market">Ver caso <span>↗</span></a>
+            </div>
+            <div class="project-visual market-ui" aria-label="Vista previa de la aplicación Raíz Market">
+              <div class="phone phone-a">
+                <div class="notch"></div><small>RAÍZ</small><b>Fresco.<br />Local.<br /><em>Tu</em> elección.</b>
+                <div class="produce">🥬</div><button>Explorar productos →</button>
+              </div>
+              <div class="phone phone-b">
+                <div class="notch"></div><small>Buenos días, Alex</small><strong>Cerca de ti</strong>
+                <div class="search">⌕ Buscar productos</div><div class="food-card">🍅<span>Tomates orgánicos<br /><b>$180 / kg</b></span></div>
+                <div class="food-card">🥖<span>Pan de masa madre<br /><b>$240</b></span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience section" id="experiencia" aria-labelledby="experience-title">
+        <div class="section-heading section-heading--light reveal">
+          <p class="section-number">02 / EXPERIENCIA</p>
+          <h2 id="experience-title">Lo que aporto<br />a cada equipo</h2>
+        </div>
+
+        <div class="experience-grid">
+          <div class="experience-intro reveal">
+            <p>Trabajo en la intersección entre el diseño y la tecnología, con foco en crear productos que funcionen tan bien como se ven.</p>
+            <button class="text-button print-button" type="button">Descargar CV <span>↓</span></button>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <p>2023 — HOY</p><div><h3>Senior Product Designer</h3><span>Surco Digital · Montevideo</span></div><b>↗</b>
+            </article>
+            <article class="timeline-item reveal">
+              <p>2021 — 2023</p><div><h3>UX/UI Designer</h3><span>Norte Studio · Buenos Aires</span></div><b>↗</b>
+            </article>
+            <article class="timeline-item reveal">
+              <p>2019 — 2021</p><div><h3>Frontend Developer</h3><span>Independiente · Remoto</span></div><b>↗</b>
+            </article>
+          </div>
+        </div>
+
+        <div class="skills reveal" aria-label="Habilidades">
+          <span>Figma</span><span>React</span><span>TypeScript</span><span>Design Systems</span><span>Framer</span><span>Webflow</span><span>Research</span><span>Prototipado</span>
+        </div>
+      </section>
+
+      <section class="about section" id="sobre-mi" aria-labelledby="about-title">
+        <div class="about-number reveal">03 / SOBRE MÍ</div>
+        <div class="portrait reveal" aria-label="Retrato ilustrado de Alex Rivera">
+          <span class="portrait-initials">AR</span>
+          <span class="portrait-label">MONTEVIDEO<br />34.9011° S</span>
+        </div>
+        <div class="about-copy reveal">
+          <h2 id="about-title">Curioso por naturaleza.<br /><em>Obsesivo</em> con los detalles.</h2>
+          <p>Diseño para que las personas entiendan, disfruten y recuerden. Me entusiasman los desafíos complejos, los equipos generosos y las ideas que todavía no tienen forma.</p>
+          <p>Cuando no estoy frente a una pantalla, probablemente esté sacando fotos, buscando buen café o pedaleando por la rambla.</p>
+          <div class="socials"><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/Akkuumaaa" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.behance.net" target="_blank" rel="noreferrer">Behance ↗</a></div>
+        </div>
+      </section>
+
+      <section class="contact" id="contacto" aria-labelledby="contact-title">
+        <p class="section-number reveal">04 / CONTACTO</p>
+        <div class="contact-main reveal">
+          <p>¿Tienes un proyecto o una oportunidad?</p>
+          <h2 id="contact-title">Hagamos algo<br /><em>increíble</em> juntos.</h2>
+          <a class="email-link" href="mailto:hola@alexrivera.dev">hola@alexrivera.dev <span>↗</span></a>
+        </div>
+        <footer>
+          <p>© <span id="year">2026</span> Alex Rivera</p>
+          <p>Montevideo, UY · <span id="local-time">00:00</span></p>
+          <a href="#inicio">Volver arriba ↑</a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
