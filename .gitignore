@@ -1,0 +1,14 @@
+# Private work repositories. Never publish these with the portfolio.
+/gh/
+/newgh/
+
+# Personal interview preparation notes are not part of the public site.
+/GUIA_ENTREVISTAS_ELIAS.md
+
+# Local tooling
+node_modules/
+coverage/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

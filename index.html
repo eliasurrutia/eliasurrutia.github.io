@@ -1,206 +1,75 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portafolio de Alex Rivera, diseñador y desarrollador frontend enfocado en experiencias digitales claras, rápidas y memorables."
-    />
-    <meta name="theme-color" content="#f4f1e8" />
-    <title>Alex Rivera — Diseñador &amp; Frontend</title>
+    <meta name="theme-color" content="#0b0d0c" />
+    <meta name="description" content="Portafolio de Elias Urrutia, desarrollador full-stack especializado en Angular, TypeScript, Svelte y Node.js." />
+    <meta property="og:title" content="Elias Urrutia — Full-Stack Developer" />
+    <meta property="og:description" content="Software para operaciones complejas, construido de punta a punta." />
+    <meta property="og:type" content="website" />
+    <title>Elias Urrutia — Full-Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
+    <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+    <div class="noise" aria-hidden="true"></div>
     <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <span class="brand-mark">AR</span>
-        <span>Alex Rivera</span>
-      </a>
-
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span>
-        <span class="sr-only">Abrir menú</span>
-      </button>
-
-      <nav id="site-nav" aria-label="Navegación principal">
-        <a href="#proyectos">Proyectos</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a class="nav-cta" href="#contacto">Hablemos <span>↗</span></a>
-      </nav>
+      <a class="brand" href="#home" aria-label="Elias Urrutia — inicio"><span class="brand-mark">EU</span><span class="brand-copy">Elias Urrutia<small>Full-stack developer</small></span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span class="sr-only" data-i18n="menu">Abrir menú</span></button>
+      <nav id="site-nav" aria-label="Navegación principal"><a href="#work" data-i18n="navWork">Proyectos</a><a href="#experience" data-i18n="navExperience">Experiencia</a><a href="#about" data-i18n="navAbout">Perfil</a><a href="#contact" data-i18n="navContact">Contacto</a></nav>
+      <div class="header-tools"><div class="language-switch" role="group" aria-label="Idioma"><button type="button" data-lang="es" aria-pressed="true">ES</button><span>/</span><button type="button" data-lang="en" aria-pressed="false">EN</button></div><button class="theme-button" type="button" aria-label="Cambiar tema" data-theme-toggle><span class="sun">☼</span><span class="moon">◐</span></button></div>
     </header>
 
-    <main id="contenido">
-      <section class="hero" id="inicio" aria-labelledby="hero-title">
-        <div class="hero-top reveal">
-          <p class="eyebrow"><span class="status-dot"></span> Disponible para nuevos proyectos</p>
-          <p class="hero-index">PORTAFOLIO / 2026</p>
-        </div>
-
-        <h1 id="hero-title" class="reveal">
-          Diseño productos<br />
-          digitales que <em>conectan.</em>
-        </h1>
-
-        <div class="hero-bottom reveal">
-          <p>
-            Soy Alex, diseñador y desarrollador frontend. Convierto ideas complejas
-            en experiencias claras, rápidas y humanas.
-          </p>
-          <a class="circle-link" href="#proyectos" aria-label="Ver proyectos">
-            <span>Ver trabajo</span>
-            <strong>↓</strong>
-          </a>
-        </div>
-
-        <div class="marquee" aria-hidden="true">
-          <div>
-            <span>DISEÑO DE PRODUCTO</span><i>✦</i><span>DESARROLLO FRONTEND</span><i>✦</i>
-            <span>EXPERIENCIA DE USUARIO</span><i>✦</i><span>DISEÑO DE PRODUCTO</span><i>✦</i>
-            <span>DESARROLLO FRONTEND</span><i>✦</i><span>EXPERIENCIA DE USUARIO</span><i>✦</i>
-          </div>
-        </div>
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-meta reveal"><p class="availability"><span></span><span data-i18n="availability">Disponible desde noviembre de 2026</span></p><p>MONTEVIDEO · UTC−3</p></div>
+        <div class="hero-copy reveal"><p class="kicker" data-i18n="heroKicker">Desarrollo productos digitales de punta a punta</p><h1 id="hero-title" data-i18n-html="heroTitle">Convierto operaciones<br />complejas en software<br /><em>simple de usar.</em></h1></div>
+        <div class="hero-footer reveal"><p data-i18n="heroBody">Desarrollador full-stack con más de cuatro años creando interfaces, APIs y flujos críticos para una plataforma SaaS hotelera.</p><div class="hero-actions"><a class="button button--solid" href="#work"><span data-i18n="viewWork">Ver proyectos</span><span aria-hidden="true">↘</span></a><a class="button button--ghost" href="mailto:eliaspdr29@gmail.com"><span data-i18n="emailMe">Escríbeme</span><span aria-hidden="true">↗</span></a></div></div>
+        <div class="hero-code" aria-hidden="true"><span>01</span><code>const impact = problem =&gt; understand(problem)<br />&nbsp;&nbsp;.then(build)<br />&nbsp;&nbsp;.then(test)<br />&nbsp;&nbsp;.then(improve);</code></div>
       </section>
 
-      <section class="projects section" id="proyectos" aria-labelledby="projects-title">
-        <div class="section-heading reveal">
-          <p class="section-number">01 / PROYECTOS</p>
-          <h2 id="projects-title">Trabajo seleccionado</h2>
-          <p>Una selección de proyectos donde estrategia, diseño y código trabajan juntos.</p>
-        </div>
+      <section class="proof" aria-label="Resumen profesional"><article><strong>4+</strong><span data-i18n="years">años construyendo SaaS</span></article><article><strong>20+</strong><span data-i18n="modules">módulos de negocio</span></article><article><strong>Full-stack</strong><span data-i18n="endToEnd">frontend, API, datos y pruebas</span></article><article><strong>ES / EN</strong><span data-i18n="localized">productos internacionalizados</span></article></section>
 
-        <div class="project-list">
-          <article class="project-card project-card--coral reveal">
-            <div class="project-copy">
-              <p class="project-number">01</p>
-              <div>
-                <div class="tags"><span>UX/UI</span><span>Frontend</span><span>2025</span></div>
-                <h3>Nexo<br />Finanzas</h3>
-                <p>Una plataforma financiera que transforma datos complejos en decisiones simples.</p>
-              </div>
-              <a href="#contacto" aria-label="Consultar sobre el proyecto Nexo Finanzas">Ver caso <span>↗</span></a>
-            </div>
-            <div class="project-visual finance-ui" aria-label="Vista previa de la aplicación Nexo Finanzas">
-              <div class="browser-bar"><i></i><i></i><i></i><span>nexo.finance/dashboard</span></div>
-              <div class="mock-dashboard">
-                <aside><b>N.</b><span>⌂</span><span>⌁</span><span>◫</span><span>⚙</span></aside>
-                <div class="dashboard-main">
-                  <div class="dash-top"><small>Buenos días, Alex</small><strong>Resumen financiero</strong></div>
-                  <div class="balance"><small>Balance total</small><b>$ 84.240</b><span>+12.8% este mes</span></div>
-                  <div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                  <div class="mini-cards"><span></span><span></span><span></span></div>
-                </div>
-              </div>
-            </div>
+      <section class="work section" id="work" aria-labelledby="work-title">
+        <div class="section-head reveal"><p class="section-label">01 / <span data-i18n="selectedWork">Trabajo seleccionado</span></p><div><h2 id="work-title" data-i18n-html="workTitle">Demos que enseñan<br />cómo <em>pienso y construyo.</em></h2><p data-i18n="workIntro">Tres productos originales con datos sintéticos. Cada uno demuestra una parte distinta de mi experiencia sin exponer trabajo confidencial.</p></div></div>
+        <div class="project-grid">
+          <article class="project-card project-card--wide reveal">
+            <div class="project-info"><div class="project-top"><span>01</span><span class="status-chip" data-i18n="liveDemo">Demo interactiva</span></div><div><p class="project-type">TYPESCRIPT CONCEPT · ANALYTICS · CSV</p><h3>StayOps<br />Control Center</h3><p data-i18n="dashboardDescription">Panel operativo para priorizar solicitudes, explorar métricas y exportar información. Incluye filtros, búsqueda y estados reales de interfaz.</p><ul><li>Component architecture</li><li data-i18n="responsiveUi">Interfaz responsive y accesible</li><li data-i18n="exportCsv">Exportación CSV</li></ul></div><a class="project-link" href="dashboard.html"><span data-i18n="openDemo">Abrir demo</span><span>↗</span></a></div>
+            <div class="project-preview dashboard-preview" aria-hidden="true"><div class="preview-window"><div class="window-bar"><i></i><i></i><i></i><span>stayops / overview</span></div><div class="dash-shell"><aside><b>S</b><i></i><i></i><i></i><i></i></aside><div class="dash-content"><div class="dash-heading"><span>Operations overview</span><small>Today, 09:42</small></div><div class="metric-row"><span><small>Open</small><b>24</b></span><span><small>Urgent</small><b>06</b></span><span><small>SLA</small><b>92%</b></span></div><div class="dash-lower"><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="ticket-list"><span></span><span></span><span></span><span></span></div></div></div></div></div></div>
           </article>
-
-          <article class="project-card project-card--violet reveal">
-            <div class="project-copy">
-              <p class="project-number">02</p>
-              <div>
-                <div class="tags"><span>Producto</span><span>Web app</span><span>2024</span></div>
-                <h3>Alma<br />Studio</h3>
-                <p>Identidad y experiencia digital para un estudio creativo en pleno crecimiento.</p>
-              </div>
-              <a href="#contacto" aria-label="Consultar sobre el proyecto Alma Studio">Ver caso <span>↗</span></a>
-            </div>
-            <div class="project-visual studio-ui" aria-label="Vista previa del sitio Alma Studio">
-              <div class="poster poster-a"><small>ALMA®</small><b>Ideas que<br /><em>mueven</em><br />personas.</b><span>ESTUDIO CREATIVO<br />MONTEVIDEO — UY</span></div>
-              <div class="poster poster-b"><div></div><strong>A</strong><small>EXPERIMENT / 04</small></div>
-            </div>
+          <article class="project-card reveal">
+            <div class="project-info"><div class="project-top"><span>02</span><span class="status-chip" data-i18n="liveDemo">Demo interactiva</span></div><div><p class="project-type">SVELTE CONCEPT · MESSAGING · E2E</p><h3>Relay<br />Guest Inbox</h3><p data-i18n="chatDescription">Bandeja de mensajería con conversaciones, estados de entrega, conexión inestable, reintentos y comportamiento móvil.</p></div><a class="project-link" href="chat.html"><span data-i18n="openDemo">Abrir demo</span><span>↗</span></a></div>
+            <div class="project-preview chat-preview" aria-hidden="true"><div class="chat-phone"><div class="chat-phone-top"><i></i><span>Guest inbox</span><b>•••</b></div><div class="bubble bubble--them">Is the rooftop open tonight?</div><div class="bubble bubble--me">Yes! It is open until 11 PM.<small>Delivered ✓✓</small></div><div class="typing"><i></i><i></i><i></i></div><div class="composer">Write a message… <b>↑</b></div></div></div>
           </article>
-
-          <article class="project-card project-card--lime reveal">
-            <div class="project-copy">
-              <p class="project-number">03</p>
-              <div>
-                <div class="tags"><span>Research</span><span>Mobile</span><span>2024</span></div>
-                <h3>Raíz<br />Market</h3>
-                <p>Un marketplace local que acerca productores conscientes a su comunidad.</p>
-              </div>
-              <a href="#contacto" aria-label="Consultar sobre el proyecto Raíz Market">Ver caso <span>↗</span></a>
-            </div>
-            <div class="project-visual market-ui" aria-label="Vista previa de la aplicación Raíz Market">
-              <div class="phone phone-a">
-                <div class="notch"></div><small>RAÍZ</small><b>Fresco.<br />Local.<br /><em>Tu</em> elección.</b>
-                <div class="produce">🥬</div><button>Explorar productos →</button>
-              </div>
-              <div class="phone phone-b">
-                <div class="notch"></div><small>Buenos días, Alex</small><strong>Cerca de ti</strong>
-                <div class="search">⌕ Buscar productos</div><div class="food-card">🍅<span>Tomates orgánicos<br /><b>$180 / kg</b></span></div>
-                <div class="food-card">🥖<span>Pan de masa madre<br /><b>$240</b></span></div>
-              </div>
-            </div>
+          <article class="project-card project-card--dark reveal">
+            <div class="project-info"><div class="project-top"><span>03</span><span class="status-chip" data-i18n="liveDemo">Demo interactiva</span></div><div><p class="project-type">NODE.JS · REST · VALIDATION</p><h3>Checkflow<br />API Lab</h3><p data-i18n="apiDescription">Explorador de una API de check-in: contratos REST, validación, respuestas HTTP, autenticación simulada y casos de error.</p></div><a class="project-link" href="api.html"><span data-i18n="openDemo">Abrir demo</span><span>↗</span></a></div>
+            <div class="project-preview api-preview" aria-hidden="true"><div class="terminal"><div><span class="method">PATCH</span><code>/check-ins/CHK-1042</code></div><pre>{
+  "status": "ready",
+  "documentsVerified": true
+}</pre><p><i>200</i> OK <small>· 84 ms</small></p><pre>{
+  "id": "CHK-1042",
+  "guest": "Maya Chen",
+  "status": "ready"
+}</pre></div></div>
           </article>
         </div>
       </section>
 
-      <section class="experience section" id="experiencia" aria-labelledby="experience-title">
-        <div class="section-heading section-heading--light reveal">
-          <p class="section-number">02 / EXPERIENCIA</p>
-          <h2 id="experience-title">Lo que aporto<br />a cada equipo</h2>
-        </div>
-
-        <div class="experience-grid">
-          <div class="experience-intro reveal">
-            <p>Trabajo en la intersección entre el diseño y la tecnología, con foco en crear productos que funcionen tan bien como se ven.</p>
-            <button class="text-button print-button" type="button">Descargar CV <span>↓</span></button>
-          </div>
-          <div class="timeline">
-            <article class="timeline-item reveal">
-              <p>2023 — HOY</p><div><h3>Senior Product Designer</h3><span>Surco Digital · Montevideo</span></div><b>↗</b>
-            </article>
-            <article class="timeline-item reveal">
-              <p>2021 — 2023</p><div><h3>UX/UI Designer</h3><span>Norte Studio · Buenos Aires</span></div><b>↗</b>
-            </article>
-            <article class="timeline-item reveal">
-              <p>2019 — 2021</p><div><h3>Frontend Developer</h3><span>Independiente · Remoto</span></div><b>↗</b>
-            </article>
-          </div>
-        </div>
-
-        <div class="skills reveal" aria-label="Habilidades">
-          <span>Figma</span><span>React</span><span>TypeScript</span><span>Design Systems</span><span>Framer</span><span>Webflow</span><span>Research</span><span>Prototipado</span>
-        </div>
+      <section class="experience section" id="experience" aria-labelledby="experience-title">
+        <div class="section-head section-head--compact reveal"><p class="section-label">02 / <span data-i18n="experience">Experiencia</span></p><h2 id="experience-title" data-i18n-html="experienceTitle">Más de cuatro años<br />entregando <em>producto real.</em></h2></div>
+        <div class="experience-layout"><aside class="experience-summary reveal"><p data-i18n="experienceSummary">Toda mi experiencia profesional corresponde a Norelian, donde trabajé de punta a punta en una plataforma multi-tenant para operaciones hoteleras.</p><div class="cv-actions"><a href="CV_ELIAS_URRUTIA_ES.md" download>CV / ES ↓</a><a href="CV_ELIAS_URRUTIA_EN.md" download>CV / EN ↓</a></div></aside><article class="role reveal"><div class="role-meta"><span>2021 — 2026</span><span>NORELIAN LLC</span></div><h3 data-i18n="roleTitle">Frontend Developer</h3><p data-i18n="roleBody">Desarrollo y mantenimiento de GuestHub, una plataforma SaaS para reservaciones, solicitudes, tareas, check-in, comunicaciones, reseñas, restaurantes, reportes y administración de propiedades.</p><div class="role-columns"><div><h4 data-i18n="product">Producto</h4><p data-i18n="productBody">Interfaces complejas, formularios, buscadores, dashboards, chat, reportes y flujos para huéspedes.</p></div><div><h4 data-i18n="engineering">Ingeniería</h4><p data-i18n="engineeringBody">APIs REST, MongoDB, validación, autenticación, migraciones, pruebas y soporte de producción.</p></div><div><h4 data-i18n="collaboration">Colaboración</h4><p data-i18n="collaborationBody">Git, Azure DevOps, pull requests, resolución de conflictos y entregas frecuentes.</p></div></div></article></div>
       </section>
 
-      <section class="about section" id="sobre-mi" aria-labelledby="about-title">
-        <div class="about-number reveal">03 / SOBRE MÍ</div>
-        <div class="portrait reveal" aria-label="Retrato ilustrado de Alex Rivera">
-          <span class="portrait-initials">AR</span>
-          <span class="portrait-label">MONTEVIDEO<br />34.9011° S</span>
-        </div>
-        <div class="about-copy reveal">
-          <h2 id="about-title">Curioso por naturaleza.<br /><em>Obsesivo</em> con los detalles.</h2>
-          <p>Diseño para que las personas entiendan, disfruten y recuerden. Me entusiasman los desafíos complejos, los equipos generosos y las ideas que todavía no tienen forma.</p>
-          <p>Cuando no estoy frente a una pantalla, probablemente esté sacando fotos, buscando buen café o pedaleando por la rambla.</p>
-          <div class="socials"><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/Akkuumaaa" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.behance.net" target="_blank" rel="noreferrer">Behance ↗</a></div>
-        </div>
-      </section>
+      <section class="stack section" aria-labelledby="stack-title"><div class="section-head section-head--compact reveal"><p class="section-label">03 / STACK</p><h2 id="stack-title" data-i18n-html="stackTitle">Herramientas que uso para<br /><em>llevar ideas a producción.</em></h2></div><div class="stack-grid reveal"><article><span>01</span><h3>Frontend</h3><p>Angular 21 · TypeScript · Signals · Zoneless · RxJS · Svelte · HTML · SCSS</p></article><article><span>02</span><h3>Backend</h3><p>Node.js · Hapi · REST APIs · Joi · scheduled jobs · service integrations</p></article><article><span>03</span><h3>Data</h3><p>MongoDB · aggregations · query optimization · Sequelize · CSV / Excel</p></article><article><span>04</span><h3>Quality &amp; delivery</h3><p>Playwright · Vitest · Git · Azure DevOps · Docker · Docker Compose</p></article></div></section>
 
-      <section class="contact" id="contacto" aria-labelledby="contact-title">
-        <p class="section-number reveal">04 / CONTACTO</p>
-        <div class="contact-main reveal">
-          <p>¿Tienes un proyecto o una oportunidad?</p>
-          <h2 id="contact-title">Hagamos algo<br /><em>increíble</em> juntos.</h2>
-          <a class="email-link" href="mailto:hola@alexrivera.dev">hola@alexrivera.dev <span>↗</span></a>
-        </div>
-        <footer>
-          <p>© <span id="year">2026</span> Alex Rivera</p>
-          <p>Montevideo, UY · <span id="local-time">00:00</span></p>
-          <a href="#inicio">Volver arriba ↑</a>
-        </footer>
-      </section>
+      <section class="about section" id="about" aria-labelledby="about-title"><div class="about-visual reveal" aria-hidden="true"><span class="orbit orbit--one"></span><span class="orbit orbit--two"></span><strong>EU</strong><small>BUILD · TEST · LEARN</small></div><div class="about-copy reveal"><p class="section-label">04 / <span data-i18n="profile">Perfil</span></p><h2 id="about-title" data-i18n-html="aboutTitle">Me gusta entender el sistema<br />completo, no sólo <em>mi pantalla.</em></h2><p data-i18n="aboutBody">Puedo seguir una funcionalidad desde la experiencia del usuario hasta la API y los datos. Me siento cómodo entrando en código existente, reproduciendo un problema, encontrando la causa raíz y protegiendo la solución con pruebas.</p><p data-i18n="aboutGoal">Busco un equipo donde pueda aportar experiencia práctica, seguir elevando la calidad técnica y construir productos que resuelvan problemas reales.</p><div class="profile-links"><a href="https://www.linkedin.com/in/elias-urrutia-066410167/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/eliasurrutia" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title"><div class="contact-meta"><p class="section-label">05 / <span data-i18n="contact">Contacto</span></p><p data-i18n="availabilityShort">Disponible desde noviembre de 2026</p></div><div class="contact-main reveal"><p data-i18n="contactKicker">¿Estás formando un equipo o construyendo algo útil?</p><h2 id="contact-title" data-i18n-html="contactTitle">Hablemos de la<br /><em>próxima oportunidad.</em></h2><div class="contact-links"><a href="mailto:eliaspdr29@gmail.com">eliaspdr29@gmail.com <span>↗</span></a><a href="https://www.linkedin.com/in/elias-urrutia-066410167/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div></div><footer><p>© <span id="year">2026</span> ELIAS URRUTIA</p><p>MONTEVIDEO · <span id="local-time">00:00</span></p><a href="#home"><span data-i18n="backTop">Volver arriba</span> ↑</a></footer></section>
     </main>
   </body>
 </html>

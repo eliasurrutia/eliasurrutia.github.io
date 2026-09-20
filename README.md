@@ -1,41 +1,29 @@
-# Portafolio personal
+# Elias Urrutia — Portfolio
 
-Sitio web estático y responsive para presentar perfil, proyectos, experiencia y datos de contacto.
+Bilingual portfolio for Elias Urrutia, a full-stack software developer focused on Angular, TypeScript, Svelte, Node.js, and product engineering.
 
-## Ver el sitio
+## Interactive demos
 
-Abre `index.html` en cualquier navegador. No necesita instalación ni dependencias.
+- **StayOps Control Center:** operations dashboard with filters, metrics, simulated requests, and CSV export.
+- **Relay Guest Inbox:** messaging inbox with delivery states, simulated connection failure, and retries.
+- **Checkflow API Lab:** REST API explorer with validation, authentication, and HTTP error scenarios.
 
-## Publicarlo con GitHub Pages
+All products, people, records, and interface code in these demos are original and fictional. They were created specifically for this portfolio and do not contain source code, customer data, screenshots, or confidential assets from previous employers.
 
-1. En `https://github.com/new`, crea un repositorio público llamado `Akkuumaaa.github.io`.
-2. Sube a la raíz los archivos `index.html`, `styles.css`, `script.js` y `.nojekyll`.
-3. En el repositorio entra en **Settings → Pages**.
-4. En **Build and deployment**, selecciona **Deploy from a branch**.
-5. Elige la rama `main`, la carpeta `/ (root)` y pulsa **Save**.
+## Features
 
-GitHub publicará el sitio en
-`https://akkuumaaa.github.io/`. También puedes asociarle un dominio propio
-más adelante.
+- Spanish and English, automatically selected from the browser language.
+- Manual language selection persisted in local storage.
+- Light and dark themes, initially selected from the operating-system preference.
+- Responsive and keyboard-accessible layouts.
+- No build step or runtime dependencies.
 
-## Personalizar
+## Local preview
 
-Todo el contenido editable está en `index.html`. Busca y reemplaza:
+Open `index.html` directly or serve this directory with any static HTTP server.
 
-- `Alex Rivera` y `AR`
-- `hola@alexrivera.dev`
-- Los enlaces de LinkedIn, GitHub y Behance
-- Los proyectos y puestos de experiencia de ejemplo
-- `Montevideo, UY` si corresponde
+## Deployment
 
-Los colores principales están al comienzo de `styles.css`, dentro de `:root`.
+The repository is ready for GitHub Pages. `.nojekyll` keeps deployment fully static.
 
-## Guardar el CV
-
-El botón **Descargar CV** abre el diálogo de impresión del navegador. Elige **Guardar como PDF** para generar una versión compartible.
-
-## Incorporar proyectos reales
-
-Mantén el repositorio del trabajo separado de este portafolio. Antes de publicar
-capturas, fragmentos o detalles técnicos, elimina credenciales, datos de clientes,
-URLs internas y cualquier material cubierto por un acuerdo de confidencialidad.
+The local directories `gh/` and `newgh/` contain private worktrees and are deliberately excluded through `.gitignore`.

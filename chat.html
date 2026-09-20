@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><meta name="theme-color" content="#0b0d0c" /><title>Relay Guest Inbox — Elias Urrutia</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" /><link rel="stylesheet" href="demo.css" /><script src="demo-shell.js" defer></script><script src="chat.js" defer></script></head>
+  <body>
+    <header class="demo-header"><a class="demo-brand" href="index.html"><b>EU</b><span>Relay Guest Inbox<small>Portfolio demo</small></span></a><nav class="demo-nav"><a class="back-link" href="index.html"><span data-i18n="back">Volver al portafolio</span> ←</a><div class="language-switch"><button data-lang="es">ES</button><span>/</span><button data-lang="en">EN</button></div><button class="theme-button" data-theme-toggle aria-label="Cambiar tema"><span class="sun">☼</span><span class="moon">◐</span></button></nav></header>
+    <main class="demo-page">
+      <section class="demo-intro"><div><p class="eyebrow" data-i18n="eyebrow">Demo 02 · Mensajería</p><h1>Relay<br />Guest Inbox</h1></div><p data-i18n="intro">Una bandeja diseñada para conversaciones operativas. Envía mensajes, corta la conexión y comprueba cómo funcionan los estados y reintentos.</p></section>
+      <p class="demo-disclaimer"><b>●</b><span data-i18n="disclaimer">Producto, personas y mensajes completamente ficticios.</span></p>
+      <section class="app-shell chat-app" aria-label="Relay messaging demo">
+        <aside class="inbox"><div class="inbox-head"><h2 data-i18n="inbox">Conversaciones</h2><input id="conversation-search" class="field" type="search" data-i18n-placeholder="search" placeholder="Buscar huésped" /></div><div class="conversation-list" id="conversation-list"></div></aside>
+        <div class="chat-panel"><header class="chat-head"><div class="guest-meta"><span class="avatar" id="active-avatar">MC</span><div><h2 id="active-name">Maya Chen</h2><p id="active-room">Habitación 804</p></div></div><button id="connection-toggle" class="action"><span class="connection" id="connection-state" data-i18n="online">En línea</span></button></header><div class="messages" id="messages" aria-live="polite"></div><form class="composer-area" id="message-form"><div class="composer-row"><button class="icon-button" type="button" aria-label="Adjuntar">＋</button><input class="field" id="message-input" autocomplete="off" data-i18n-placeholder="messagePlaceholder" placeholder="Escribe un mensaje" /><button class="send-button" id="send-button" type="submit" data-i18n="send">Enviar</button></div><p class="composer-hint" data-i18n="hint">Prueba desconectar la red y enviar un mensaje.</p></form></div>
+      </section>
+    </main>
+    <div class="toast" id="toast" role="status"></div>
+  </body>
+</html>
