@@ -1,13 +1,13 @@
 # ELIAS URRUTIA
 
-**Frontend Engineer | Angular 21 · TypeScript · Svelte · Experiencia Full-Stack**
+**Desarrollador Full-Stack | Angular 21 · TypeScript · Node.js · MongoDB**
 
 Montevideo, Uruguay | eliaspdr29@gmail.com
 [LinkedIn](https://www.linkedin.com/in/elias-urrutia-066410167/) | [GitHub/Portafolio](https://github.com/eliasurrutia)
 
 ## PERFIL PROFESIONAL
 
-Frontend Engineer con más de cuatro años de experiencia construyendo y manteniendo aplicaciones empresariales de alta complejidad dentro de una plataforma SaaS multi-tenant para operaciones hoteleras. Especializado en Angular 21, TypeScript estricto, Signals y arquitectura frontend reactiva, con experiencia práctica full-stack en Node.js, Hapi y MongoDB. Capaz de llevar funcionalidades de punta a punta: análisis del problema, interfaz responsive, lógica de negocio, API REST, persistencia, internacionalización, pruebas automatizadas y soporte en producción. Experiencia trabajando en un monorepo de gran escala y resolviendo problemas en más de 20 módulos de negocio.
+Desarrollador full-stack con más de cuatro años de experiencia construyendo y manteniendo aplicaciones empresariales de alta complejidad dentro de una plataforma SaaS multi-tenant para operaciones hoteleras. Especializado en Angular 21, TypeScript estricto, Signals y arquitectura frontend reactiva, con experiencia práctica en Node.js, Hapi y MongoDB. Capaz de llevar funcionalidades de punta a punta: análisis del problema, interfaz responsive, lógica de negocio, API REST, persistencia, internacionalización, pruebas automatizadas y soporte en producción. Experiencia trabajando en un monorepo de gran escala y resolviendo problemas en más de 20 módulos de negocio.
 
 ## HABILIDADES TÉCNICAS
 
@@ -25,7 +25,7 @@ Frontend Engineer con más de cuatro años de experiencia construyendo y manteni
 
 ## EXPERIENCIA PROFESIONAL
 
-### Frontend Developer — Norelian LLC
+### Desarrollador Full-Stack — Norelian LLC
 
 **Noviembre de 2021 – Octubre de 2026 | Montevideo, Uruguay**
 
