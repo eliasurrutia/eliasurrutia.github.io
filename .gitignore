@@ -8,6 +8,7 @@
 # Local tooling
 node_modules/
 coverage/
+.cv-build/
 .DS_Store
 Thumbs.db
 .idea/
