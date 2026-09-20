@@ -1,7 +1,7 @@
 const translations = {
   es: {
     skip: 'Saltar al contenido', menu: 'Abrir menú', navWork: 'Proyectos', navExperience: 'Experiencia', navAbout: 'Perfil', navContact: 'Contacto',
-    availability: 'Disponible desde noviembre de 2026', heroKicker: 'Desarrollo productos digitales de punta a punta',
+    availability: 'Disponibilidad inmediata', heroKicker: 'Desarrollo productos digitales de punta a punta',
     heroTitle: 'Convierto operaciones<br />complejas en software<br /><em>simple de usar.</em>',
     heroBody: 'Desarrollador full-stack con más de cuatro años creando interfaces, APIs y flujos críticos para una plataforma SaaS hotelera.',
     viewWork: 'Ver proyectos', emailMe: 'Escríbeme', years: 'años construyendo SaaS', modules: 'módulos de negocio',
@@ -23,12 +23,12 @@ const translations = {
     aboutTitle: 'Me gusta entender el sistema<br />completo, no sólo <em>mi pantalla.</em>',
     aboutBody: 'Puedo seguir una funcionalidad desde la experiencia del usuario hasta la API y los datos. Me siento cómodo entrando en código existente, reproduciendo un problema, encontrando la causa raíz y protegiendo la solución con pruebas.',
     aboutGoal: 'Busco un equipo donde pueda aportar experiencia práctica, seguir elevando la calidad técnica y construir productos que resuelvan problemas reales.',
-    contact: 'Contacto', availabilityShort: 'Disponible desde noviembre de 2026', contactKicker: '¿Estás formando un equipo o construyendo algo útil?',
+    contact: 'Contacto', availabilityShort: 'Disponibilidad inmediata', contactKicker: '¿Estás formando un equipo o construyendo algo útil?',
     contactTitle: 'Hablemos de la<br /><em>próxima oportunidad.</em>', backTop: 'Volver arriba'
   },
   en: {
     skip: 'Skip to content', menu: 'Open menu', navWork: 'Projects', navExperience: 'Experience', navAbout: 'Profile', navContact: 'Contact',
-    availability: 'Available from November 2026', heroKicker: 'I build digital products end to end',
+    availability: 'Available immediately', heroKicker: 'I build digital products end to end',
     heroTitle: 'I turn complex<br />operations into software<br /><em>people can use.</em>',
     heroBody: 'Full-stack developer with 4+ years building interfaces, APIs, and critical workflows for a hospitality SaaS platform.',
     viewWork: 'View projects', emailMe: 'Email me', years: 'years building SaaS', modules: 'business modules',
@@ -50,7 +50,7 @@ const translations = {
     aboutTitle: 'I like understanding the whole<br />system, not just <em>my screen.</em>',
     aboutBody: 'I can follow a feature from the user experience down to the API and data. I am comfortable entering an existing codebase, reproducing a problem, finding the root cause, and protecting the solution with tests.',
     aboutGoal: 'I am looking for a team where I can contribute practical experience, keep raising technical quality, and build products that solve real problems.',
-    contact: 'Contact', availabilityShort: 'Available from November 2026', contactKicker: 'Building a team or working on something useful?',
+    contact: 'Contact', availabilityShort: 'Available immediately', contactKicker: 'Building a team or working on something useful?',
     contactTitle: 'Let’s talk about the<br /><em>next opportunity.</em>', backTop: 'Back to top'
   }
 };
